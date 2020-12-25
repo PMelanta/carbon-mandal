@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-clean-blog"
-  spec.version       = "4.0.10"
-  spec.authors       = ["Start Bootstrap"]
-  spec.email         = ["feedback@startbootstrap.com"]
+  spec.name          = "carbon-mandal"
+  spec.version       = "0.0.1"
+  spec.authors       = ["Carbon Mandal"]
+  spec.email         = ["info@carbonmandal.com"]
 
-  spec.summary       = "A simple blog theme based on Bootstrap 4 by Start Bootstrap."
+  spec.summary       = "Carbon Mandal Sustainability Consulting Company"
   spec.homepage      = "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll"
   spec.license       = "MIT"
 

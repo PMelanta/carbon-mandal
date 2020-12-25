@@ -1,8 +1,8 @@
 {
-    "title": "Clean Blog Jekyll",
-    "name": "startbootstrap-clean-blog-jekyll",
-    "version": "4.0.10",
-    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
+    "title": "Carbon Mandal",
+    "name": "carbon-mandal",
+    "version": "0.0.1",
+    "description": "Carbon Mandal Sustainability Consulting Company",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,16 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/clean-blog-jekyll",
+    "homepage": "https://www.carbonmandal.com",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://www.carbonmandal.com/issues",
+        "email": "info@carbonmandal.com"
     },
-    "license": "MIT",
-    "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll.git"
+        "url": "https://github.com/Carbon-Mandal/carbonmandal.git"
     },
     "dependencies": {
         "bootstrap": "4.5.0",
