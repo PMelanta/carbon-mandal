@@ -1,9 +1,10 @@
-title:              Carbon Mandal LLP
+title:              Carbon Mandal
 email:              f/mknppzwe
 description:        Carbon Mandal Sustainability Consulting Company
-author:             Carbon Mandal LLP
+author:             Carbon Mandal
 baseurl:            "/carbon-mandal"
 url:                "https://blog.carbonmandal.com"
+company:             Carbon Mandal LLP
 
 # Social Profiles
 email_username: info@carbonmandal.com
