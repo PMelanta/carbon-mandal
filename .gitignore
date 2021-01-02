@@ -6,3 +6,4 @@ Gemfile.lock
 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/*
 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/*
 .DS_Store
+.idea/*
