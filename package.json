@@ -20,7 +20,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Carbon-Mandal/carbonmandal.git"
+        "url": "https://github.com/PMelanta/carbon-mandal.git"
     },
     "dependencies": {
         "bootstrap": "4.5.0",
