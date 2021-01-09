@@ -1,44 +1,83 @@
 ---
 layout: page
 title: Contact Me
-description: Have questions? I have answers.
+description: Have questions? We have answers.
 background: '/img/bg-contact.jpg'
-form: true
 ---
-
-<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
-<form name="sentMessage" id="contactForm" novalidate>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Name</label>
-      <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-      <p class="help-block text-danger"></p>
+<div class="row">
+  <!-- Map Column -->
+  <div class="col-lg-6 mb-3">
+    <!-- Embedded Google Map -->
+    <iframe style="width: 100%; height: 400px; border: 0;"
+     src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=12.347489,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+  </div>
+  <!-- Contact Details Column -->
+  <div class="col-lg-5 mb-5">
+    <h3>Contact Details</h3>
+    <p>
+      #172 Carbon Mandal
+      <br>1st Stage Hebbal Mysure, KA 570016
+      <br>
+    </p>
+    <p>
+      <abbr title="Phone">P</abbr>: 6364 397342
+    </p>
+    <p>
+      <abbr title="Email">E</abbr>:
+      <a href="mailto:name@example.com">roshan@carbonmandal.com
+      </a>
+    </p>
+    <p>
+      <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+    </p>
+  </div>
+</div>
+<hr>
+<h3 class="register-heading">Send us a Message</h3>
+<hr>
+<form method="post" autocomplete="off" name="google-sheet" novalidate>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+            <label>Name</label>
+        <input type="text" name="Name" class="form-control" placeholder="Name" required data-validation-required-message="Please enter your name."/>
+            <p class="help-block text-danger"></p>
+        </div>
     </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Email Address</label>
-      <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-      <p class="help-block text-danger"></p>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+            <label>Email Address</label>
+        <input type="email" name="Email" class="form-control" placeholder="Email Address" required data-validation-required-message="Please enter your email address."/>
+            <p class="help-block text-danger"></p>
+        </div>
     </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <label>Phone Number</label>
-      <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-      <p class="help-block text-danger"></p>
+    <div class="control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>Phone Number</label>
+        <input type="tel" name="Phone" class="form-control" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number."/>
+            <p class="help-block text-danger"></p>
+        </div>
     </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Message</label>
-      <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-      <p class="help-block text-danger"></p>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+            <label>Message</label>
+            <textarea rows="5" name="Message" class="form-control" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+            <p class="help-block text-danger"></p>
+        </div>
     </div>
-  </div>
-  <br>
-  <div id="success"></div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-  </div>
+    <br>
+    <div id="success"></div>
+    <div class="form-group">
+        <input type="submit" name="submit" class="btnSubmit btn-block" value="Send" />
+    </div>
 </form>
+
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz1dEmvHUYRvb_f2RkMK_mOc91LaT3vWvIKogD-9wpKCAfoSH-CiSp-/exec'
+            const form = document.forms['google-sheet']
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>

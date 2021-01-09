@@ -3,3 +3,7 @@ _site
 node_modules
 Gemfile.lock
 *.gem
+.jekyll-cache/Jekyll/Cache/Jekyll--Cache/*
+.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/*
+.DS_Store
+.idea/*

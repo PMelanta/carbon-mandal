@@ -1,16 +1,18 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+title:              Carbon Mandal
+email:              f/mknppzwe
+description:        Sustainability Consulting Company
+author:             Carbon Mandal
+baseurl:            "/carbon-mandal"
+url:                "https://blog.carbonmandal.com"
+company:             Carbon Mandal LLP
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+email_username: info@carbonmandal.com
+twitter_username: Carbon-Mandal
+github_username: Carbon-Mandal
+facebook_username: Carbon-Mandal
+instagram_username: Carbon-Mandal
+linkedin_username: Carbon-Mandal
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
