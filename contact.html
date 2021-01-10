@@ -4,36 +4,7 @@ title: Contact Me
 description: Have questions? We have answers.
 background: '/img/bg-contact.jpg'
 ---
-<div class="row">
-  <!-- Map Column -->
-  <div class="col-lg-6 mb-3">
-    <!-- Embedded Google Map -->
-    <iframe style="width: 100%; height: 400px; border: 0;"
-     src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=12.347489,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-  </div>
-  <!-- Contact Details Column -->
-  <div class="col-lg-5 mb-5">
-    <h3>Contact Details</h3>
-    <p>
-      #172 Carbon Mandal
-      <br>1st Stage Hebbal Mysure, KA 570016
-      <br>
-    </p>
-    <p>
-      <abbr title="Phone">P</abbr>: 6364 397342
-    </p>
-    <p>
-      <abbr title="Email">E</abbr>:
-      <a href="mailto:name@example.com">roshan@carbonmandal.com
-      </a>
-    </p>
-    <p>
-      <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
-    </p>
-  </div>
-</div>
-<hr>
-<h3 class="register-heading">Send us a Message</h3>
+<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
 <hr>
 <form method="post" autocomplete="off" name="google-sheet" novalidate>
     <div class="control-group">
@@ -67,10 +38,9 @@ background: '/img/bg-contact.jpg'
     <br>
     <div id="success"></div>
     <div class="form-group">
-        <input type="submit" name="submit" class="btnSubmit btn-block" value="Send" />
+        <button type="submit" name="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
     </div>
 </form>
-
 <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbz1dEmvHUYRvb_f2RkMK_mOc91LaT3vWvIKogD-9wpKCAfoSH-CiSp-/exec'
             const form = document.forms['google-sheet']
@@ -81,3 +51,23 @@ background: '/img/bg-contact.jpg'
                 .catch(error => console.error('Error!', error.message))
             })
 </script>
+<hr>
+<div class="row">
+    <!-- Map Column -->
+    <div class="col-lg-5 mb-5">
+        <!-- Embedded Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498415.43201009446!2d76.41752503076731!3d12.590781277233496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b102e71a0b9%3A0x8920ae01a1d1908!2sCarbon%20Mandal%20LLP!5e0!3m2!1sen!2sin!4v1610265742936!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- Contact Details Column -->
+    <div class="col-lg-5 mb-5">
+        <h3>Contact Details</h3>
+        <p>
+            #172 Carbon Mandal
+            <br>1st Stage Hebbal Mysure,
+            <br>KA IND 570016
+            <br>
+            <abbr title="Phone">P</abbr>: 6364 397342
+            <br><abbr title="Email">E</abbr>:<a href="mailto:name@example.com">roshan@carbonmandal.com</a>
+            <br><abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+    </div>
+</div>
