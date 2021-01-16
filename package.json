@@ -11,11 +11,6 @@
         "theme",
         "template"
     ],
-    "homepage": "https://www.carbonmandal.com",
-    "bugs": {
-        "url": "https://www.carbonmandal.com/issues",
-        "email": "info@carbonmandal.com"
-    },
     "contributors": [
     ],
     "repository": {
